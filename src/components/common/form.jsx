@@ -61,9 +61,8 @@ class Form extends Component {
     );
   }
 
-  renderInput(name, label, value, type = 'text') {
+  renderInput(name, label, type = 'text') {
     const { data, errors } = this.state;
-    if (value) data[name] = value;
 
     return (
       <Input
@@ -77,9 +76,8 @@ class Form extends Component {
     );
   }
 
-  renderSelect(name, label, options, value) {
+  renderSelect(name, label, options) {
     const { data, errors } = this.state;
-    if (value) data[name] = value;
 
     return (
       <Select
